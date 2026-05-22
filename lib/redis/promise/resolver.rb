@@ -21,26 +21,33 @@ class Redis
       # Resolve the promise with the given value.
       # The value gets serialized to JSON using `to_json`.
       #
-      #: (top) -> void
-      def resolve(value)
+      # There is an optional argument `expire:` that determines
+      # the amount of seconds after which the key-value will get automatically deleted from redis.
+      #
+      #: (top, ?expire: Integer?) -> void
+      def resolve(value, expire: nil)
         serialized = { value: value }.to_json
-        push(serialized)
+        push(serialized, expire)
       end
 
       # Reject the promise with the given value.
       # The value gets serialized to JSON using `to_json`.
       #
-      #: (top) -> void
-      def reject(err)
+      # There is an optional argument `expire:` that determines
+      # the amount of seconds after which the key-value will get automatically deleted from redis.
+      #
+      #: (top, ?expire: Integer?) -> void
+      def reject(err, expire: nil)
         serialized = { err: err }.to_json
-        push(serialized)
+        push(serialized, expire)
       end
 
       private
 
-      #: (String) -> void
-      def push(serialized)
+      #: (String, Integer?) -> void
+      def push(serialized, expire)
         @redis.rpush(@key, serialized)
+        @redis.expire(@key, expire) if expire
       end
     end
   end

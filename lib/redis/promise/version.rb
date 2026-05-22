@@ -3,6 +3,6 @@
 
 class Redis
   class Promise # rubocop:disable Style/StaticClass
-    VERSION = '0.1.0'
+    VERSION = '0.1.1'
   end
 end

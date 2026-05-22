@@ -12,6 +12,13 @@ Add changes in new features here. Do not change the gem's version in pull/merge 
 ### Changes
 -
 
+## [0.1.1] - 22.05.2026
+
+[Diff](https://github.com/Verseth/ruby-redis-promise/compare/v0.1.0...v0.1.1)
+
+- Add optional `expire:` arguments to `resolve` and `reject` methods in `Redis::Promise::Resolver`
+- Add an overridable `expire` method under `Redis::Promise::Resque`
+
 ## [0.1.0] - 22.05.2026
 
 [Diff](https://github.com/Verseth/ruby-redis-promise/compare/v0.0.0...v0.1.0)

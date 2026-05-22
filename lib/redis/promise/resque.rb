@@ -13,8 +13,21 @@ class Redis
 
       # @requires_ancestor: Kernel
       module ClassMethods
+        # Returns a custom redis connection that will be used in promises
+        # and resolvers.
+        #
+        # By default it uses `Resque.redis`
+        #
         #: -> Redis
         def promise_redis = ::Resque.redis
+
+        # The amount of time after which the resolved/rejected value will
+        # get deleted from redis.
+        #
+        # By default `nil` which means it will never be deleted.
+        #
+        #: -> Integer?
+        def expire = nil
 
         #: (*top) -> Promise
         def enqueue(*args)
@@ -27,6 +40,11 @@ class Redis
         #: (String, *untyped) -> void
         def perform(promise_key, *args); end
 
+        # Defines the body of the job.
+        #
+        # Returned value will be used to resolve the promise.
+        # Any thrown errors are caught and used to reject the promise.
+        #
         #: { (untyped) -> void } -> void
         def run(&block)
           define_singleton_method :perform do |promise_key, *args|
