@@ -52,9 +52,9 @@ class Redis
 
             begin
               result = block.call(*args)
-              promise.resolve(result)
+              promise.resolve(result, expire: expire)
             rescue StandardError => e
-              promise.reject("[#{e.class}]: #{e.message}")
+              promise.reject("[#{e.class}]: #{e.message}", expire: expire)
             end
           end
         end
