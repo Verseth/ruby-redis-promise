@@ -1,0 +1,204 @@
+PATH
+  remote: .
+  specs:
+    redis-promise (0.1.0)
+      redis (~> 5.4)
+      sorbet-runtime (~> 0.6)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ast (2.4.3)
+    benchmark (0.5.0)
+    byebug (13.0.0)
+      reline (>= 0.6.0)
+    connection_pool (3.0.2)
+    date (3.5.1)
+    erb (6.0.4)
+    erubi (1.13.1)
+    io-console (0.8.2)
+    irb (1.18.0)
+      pp (>= 0.6.0)
+      prism (>= 1.3.0)
+      rdoc (>= 4.0.0)
+      reline (>= 0.4.2)
+    json (2.19.5)
+    language_server-protocol (3.17.0.5)
+    lint_roller (1.1.0)
+    logger (1.7.0)
+    minitest (5.27.0)
+    netrc (0.11.0)
+    parallel (2.1.0)
+    parser (3.3.11.1)
+      ast (~> 2.4.1)
+      racc
+    pp (0.6.3)
+      prettyprint
+    prettyprint (0.2.0)
+    prism (1.9.0)
+    psych (5.3.1)
+      date
+      stringio
+    racc (1.8.1)
+    rainbow (3.1.1)
+    rake (13.4.2)
+    rbi (0.3.12)
+      prism (~> 1.0)
+      rbs (>= 4.0.1)
+    rbs (4.0.2)
+      logger
+      prism (>= 1.6.0)
+      tsort
+    rdoc (7.2.0)
+      erb
+      psych (>= 4.0.0)
+      tsort
+    redis (5.4.1)
+      redis-client (>= 0.22.0)
+    redis-client (0.29.0)
+      connection_pool
+    regexp_parser (2.12.0)
+    reline (0.6.3)
+      io-console (~> 0.5)
+    require-hooks (0.4.0)
+    rexml (3.4.4)
+    rubocop (1.86.2)
+      json (~> 2.3)
+      language_server-protocol (~> 3.17.0.2)
+      lint_roller (~> 1.1.0)
+      parallel (>= 1.10)
+      parser (>= 3.3.0.2)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 2.9.3, < 3.0)
+      rubocop-ast (>= 1.49.0, < 2.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 2.4.0, < 4.0)
+    rubocop-ast (1.49.1)
+      parser (>= 3.3.7.2)
+      prism (~> 1.7)
+    rubocop-espago (1.2.0)
+      rubocop
+    rubocop-sorbet (0.12.0)
+      lint_roller
+      rubocop (>= 1.75.2)
+    ruby-progressbar (1.13.0)
+    rubydex (0.2.3-aarch64-linux)
+    rubydex (0.2.3-arm64-darwin)
+    rubydex (0.2.3-x86_64-darwin)
+    rubydex (0.2.3-x86_64-linux)
+    shoulda-context (2.0.0)
+    sorbet (0.6.13244)
+      sorbet-static (= 0.6.13244)
+    sorbet-runtime (0.6.13244)
+    sorbet-static (0.6.13244-aarch64-linux)
+    sorbet-static (0.6.13244-universal-darwin)
+    sorbet-static (0.6.13244-x86_64-linux)
+    sorbet-static-and-runtime (0.6.13244)
+      sorbet (= 0.6.13244)
+      sorbet-runtime (= 0.6.13244)
+    spoom (1.7.15)
+      erubi (>= 1.10.0)
+      prism (>= 0.28.0)
+      rbi (>= 0.3.3)
+      rbs (>= 4.0.0.dev.5)
+      rexml (>= 3.2.6)
+      sorbet-static-and-runtime (>= 0.5.10187)
+      thor (>= 0.19.2)
+    stringio (3.2.0)
+    tapioca (0.19.1)
+      benchmark
+      bundler (>= 2.2.25)
+      netrc (>= 0.11.0)
+      parallel (>= 1.21.0)
+      rbi (>= 0.3.7)
+      require-hooks (>= 0.2.2)
+      rubydex (>= 0.1.0.beta10)
+      sorbet-static-and-runtime (>= 0.6.12698)
+      spoom (>= 1.7.9)
+      thor (>= 1.2.0)
+      tsort
+    thor (1.5.0)
+    tsort (0.2.0)
+    unicode-display_width (3.2.0)
+      unicode-emoji (~> 4.1)
+    unicode-emoji (4.2.0)
+
+PLATFORMS
+  aarch64-linux
+  universal-darwin
+  x86_64-linux
+
+DEPENDENCIES
+  byebug (~> 13.0.0)
+  irb (~> 1.18.0)
+  minitest (~> 5.16)
+  rake (~> 13.4.2)
+  redis-promise!
+  rubocop (~> 1.86.2)
+  rubocop-espago (~> 1.1)
+  rubocop-sorbet (~> 0.12.0)
+  shoulda-context (~> 2.0)
+  sorbet (~> 0.6.13244)
+  tapioca (~> 0.19.1)
+
+CHECKSUMS
+  ast (2.4.3) sha256=954615157c1d6a382bc27d690d973195e79db7f55e9765ac7c481c60bdb4d383
+  benchmark (0.5.0) sha256=465df122341aedcb81a2a24b4d3bd19b6c67c1530713fd533f3ff034e419236c
+  byebug (13.0.0) sha256=d2263efe751941ca520fa29744b71972d39cbc41839496706f5d9b22e92ae05d
+  connection_pool (3.0.2) sha256=33fff5ba71a12d2aa26cb72b1db8bba2a1a01823559fb01d29eb74c286e62e0a
+  date (3.5.1) sha256=750d06384d7b9c15d562c76291407d89e368dda4d4fff957eb94962d325a0dc0
+  erb (6.0.4) sha256=38e3803694be357fe2bfe312487c74beaf9fb4e5beb3e22498952fe1645b95d9
+  erubi (1.13.1) sha256=a082103b0885dbc5ecf1172fede897f9ebdb745a4b97a5e8dc63953db1ee4ad9
+  io-console (0.8.2) sha256=d6e3ae7a7cc7574f4b8893b4fca2162e57a825b223a177b7afa236c5ef9814cc
+  irb (1.18.0) sha256=de9454a0703a54704b9811a5ef31a60c86949fbf4013fcf244fabc7c775248e3
+  json (2.19.5) sha256=218a18553e4801d579ca7e0f5bc72bafd776d7397238a1fb4e74db5b0a812c59
+  language_server-protocol (3.17.0.5) sha256=fd1e39a51a28bf3eec959379985a72e296e9f9acfce46f6a79d31ca8760803cc
+  lint_roller (1.1.0) sha256=2c0c845b632a7d172cb849cc90c1bce937a28c5c8ccccb50dfd46a485003cc87
+  logger (1.7.0) sha256=196edec7cc44b66cfb40f9755ce11b392f21f7967696af15d274dde7edff0203
+  minitest (5.27.0) sha256=2d3b17f8a36fe7801c1adcffdbc38233b938eb0b4966e97a6739055a45fa77d5
+  netrc (0.11.0) sha256=de1ce33da8c99ab1d97871726cba75151113f117146becbe45aa85cb3dabee3f
+  parallel (2.1.0) sha256=b35258865c2e31134c5ecb708beaaf6772adf9d5efae28e93e99260877b09356
+  parser (3.3.11.1) sha256=d17ace7aabe3e72c3cc94043714be27cc6f852f104d81aa284c2281aecc65d54
+  pp (0.6.3) sha256=2951d514450b93ccfeb1df7d021cae0da16e0a7f95ee1e2273719669d0ab9df6
+  prettyprint (0.2.0) sha256=2bc9e15581a94742064a3cc8b0fb9d45aae3d03a1baa6ef80922627a0766f193
+  prism (1.9.0) sha256=7b530c6a9f92c24300014919c9dcbc055bf4cdf51ec30aed099b06cd6674ef85
+  psych (5.3.1) sha256=eb7a57cef10c9d70173ff74e739d843ac3b2c019a003de48447b2963d81b1974
+  racc (1.8.1) sha256=4a7f6929691dbec8b5209a0b373bc2614882b55fc5d2e447a21aaa691303d62f
+  rainbow (3.1.1) sha256=039491aa3a89f42efa1d6dec2fc4e62ede96eb6acd95e52f1ad581182b79bc6a
+  rake (13.4.2) sha256=cb825b2bd5f1f8e91ca37bddb4b9aaf345551b4731da62949be002fa89283701
+  rbi (0.3.12) sha256=406ea58265942e7f2316744a11de742fdef8b2325bb6066c71c9765f53298eb2
+  rbs (4.0.2) sha256=af75671e66cd03434cc546622741ebf83f6197ec4328375805306330bf78ef25
+  rdoc (7.2.0) sha256=8650f76cd4009c3b54955eb5d7e3a075c60a57276766ebf36f9085e8c9f23192
+  redis (5.4.1) sha256=b5e675b57ad22b15c9bcc765d5ac26f60b675408af916d31527af9bd5a81faae
+  redis-client (0.29.0) sha256=0c65bf1f8f6dca22063ddb085c0bb2054feef6f03a84869f4161b18a9a15bea3
+  redis-promise (0.1.0)
+  regexp_parser (2.12.0) sha256=35a916a1d63190ab5c9009457136ae5f3c0c7512d60291d0d1378ba18ce08ebb
+  reline (0.6.3) sha256=1198b04973565b36ec0f11542ab3f5cfeeec34823f4e54cebde90968092b1835
+  require-hooks (0.4.0) sha256=005f4c6435b4edae73e358cdbaba48370a4121f9ce893d5d2a3c66fce855677d
+  rexml (3.4.4) sha256=19e0a2c3425dfbf2d4fc1189747bdb2f849b6c5e74180401b15734bc97b5d142
+  rubocop (1.86.2) sha256=bb2e97f635eda42c448f2588f4a6ff78f221b8bdfdf65b1e9b07fbd57521b45d
+  rubocop-ast (1.49.1) sha256=4412f3ee70f6fe4546cc489548e0f6fcf76cafcfa80fa03af67098ffed755035
+  rubocop-espago (1.2.0) sha256=4e587d1fab761f4345cbb011220d8d8f7bdea0ab0b4f4283076ae953679c4dcb
+  rubocop-sorbet (0.12.0) sha256=195521e132500555819313df5accaaf56bf721a63de3e5b7b1d0b25f696b1f39
+  ruby-progressbar (1.13.0) sha256=80fc9c47a9b640d6834e0dc7b3c94c9df37f08cb072b7761e4a71e22cff29b33
+  rubydex (0.2.3-aarch64-linux) sha256=f666ff383430cc800cb0889d52c77da7457e99165b5eef7c0d45491a5fafea87
+  rubydex (0.2.3-arm64-darwin) sha256=997d7895a0208ec3d7ef922c9d29243b62e10c67bc3c2396a9f978d7df117390
+  rubydex (0.2.3-x86_64-darwin) sha256=de4890f91bedb59bfefb90c528939e52475da3afa105feaf855594ad527b0fb9
+  rubydex (0.2.3-x86_64-linux) sha256=796a54c1af9f8868c87bf92fee5f9ccc39ffd40eb8386e0875058a18beb76b09
+  shoulda-context (2.0.0) sha256=7adf45342cd800f507d2a053658cb1cce2884b616b26004d39684b912ea32c34
+  sorbet (0.6.13244) sha256=c9d5c571fe9dc5cc2b7219623ad65a1033bb1d0175a477998d87207cb892fe6a
+  sorbet-runtime (0.6.13244) sha256=80f0bf0bf6cff2c874dbd2182329c2b6fd5d6ced60397efca4be1970289e037c
+  sorbet-static (0.6.13244-aarch64-linux) sha256=80dfc1543a358341d3ac69f10ced72a96e4663ab8c6fdd135658e6723363bf52
+  sorbet-static (0.6.13244-universal-darwin) sha256=2747bf82e57dcf9ad6bec206c627484207c6aa97953fb60597eb2b78fe7bee31
+  sorbet-static (0.6.13244-x86_64-linux) sha256=794d5e15e60cbd97d9517590d5dee40886e2cef2c20e38305aaeea4b527b5668
+  sorbet-static-and-runtime (0.6.13244) sha256=94e6efc75a5562295d33c2d535c393fb1a4ea4569314b5162ec461d68a3a7037
+  spoom (1.7.15) sha256=39698a3bf7841841ae83c6145d5e008290ddb9433e84d9025e017b915bd36a83
+  stringio (3.2.0) sha256=c37cb2e58b4ffbd33fe5cd948c05934af997b36e0b6ca6fdf43afa234cf222e1
+  tapioca (0.19.1) sha256=5de94d458950897ffe3d4e86a21eec48bb6a8775af85f80b1486b7ae7ba51823
+  thor (1.5.0) sha256=e3a9e55fe857e44859ce104a84675ab6e8cd59c650a49106a05f55f136425e73
+  tsort (0.2.0) sha256=9650a793f6859a43b6641671278f79cfead60ac714148aabe4e3f0060480089f
+  unicode-display_width (3.2.0) sha256=0cdd96b5681a5949cdbc2c55e7b420facae74c4aaf9a9815eee1087cb1853c42
+  unicode-emoji (4.2.0) sha256=519e69150f75652e40bf736106cfbc8f0f73aa3fb6a65afe62fefa7f80b0f80f
+
+BUNDLED WITH
+  4.0.10
