@@ -18,3 +18,9 @@ Metrics/ClassLength:
 
 Sorbet/ForbidTTypeAlias:
   Enabled: false
+
+Sorbet/ForbidTHelpers:
+  Enabled: false
+
+Sorbet/ForbidMixesInClassMethods:
+  Enabled: false

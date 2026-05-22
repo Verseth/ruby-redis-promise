@@ -1,7 +1,8 @@
+# typed: true
 # frozen_string_literal: true
 
-module Redis
-  module Promise
+class Redis
+  class Promise # rubocop:disable Style/StaticClass
     VERSION = '0.1.0'
   end
 end
