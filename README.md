@@ -47,7 +47,7 @@ threads << Thread.new do
 end
 
 threads << Thread.new do
-  result = promise.await #=> "OK!"
+  puts promise.await #=> "OK!"
 end
 
 threads.each(&:join)
